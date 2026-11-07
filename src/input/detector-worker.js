@@ -100,7 +100,7 @@ async function initFace() {
 
 async function init(prefer) {
   self.postMessage({ type: 'stage', stage: 'download' });
-  ({ MP_BUNDLE_URL, MP_WASM_URL, HAND_MODEL_URL, FACE_MODEL_URL } = await import(new URL('../shared/constants.js', self.location.href).href));
+  ({ MP_BUNDLE_URL, MP_WASM_URL, HAND_MODEL_URL, FACE_MODEL_URL } = await import(new URL('./mp-constants.js', self.location.href).href));
   vision = await import(MP_BUNDLE_URL);
   fileset = await vision.FilesetResolver.forVisionTasks(MP_WASM_URL, false); // classic loader (importScripts)
   // download everything first (into the HTTP cache), so GPU setup can be timed on its own

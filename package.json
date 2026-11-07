@@ -1,0 +1,23 @@
+{
+  "name": "lantern-barge",
+  "version": "1.0.0",
+  "description": "Lantern Barge — webcam boxing in the browser",
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "build": "node scripts/build.mjs",
+    "serve": "python3 tools/serve.py 8000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mohitranka/boxing.git"
+  },
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/mohitranka/boxing/issues"
+  },
+  "homepage": "https://github.com/mohitranka/boxing#readme",
+  "devDependencies": {
+    "esbuild": "^0.28.2"
+  },
+  "private": true
+}
