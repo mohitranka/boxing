@@ -18,7 +18,7 @@ npm install
 npm run build          # writes dist/: minified app.js, worker, index.html, styles.css
 ```
 
-`dist/` is the deployable artifact; it is what `projects.mohitranka.com/boxing/` serves.
+`dist/` is the deployable artifact; it is what `www.mohitranka.com/projects/boxing/` serves.
 The source stays in this private repo.
 
 ## Test

@@ -42,8 +42,8 @@ jobs:
           chmod 600 ~/.ssh/deploy
           ssh-keyscan -t ed25519 github.com >> ~/.ssh/known_hosts 2>/dev/null
           GIT_SSH_COMMAND='ssh -i ~/.ssh/deploy -o IdentitiesOnly=yes' \
-            git clone --depth 1 git@github.com:mohitranka/projects.mohitranka.com.git site
-          rsync -a --delete dist/ site/boxing/
+            git clone --depth 1 git@github.com:mohitranka/mohitranka-site.git site
+          rsync -a --delete dist/ site/projects/boxing/
           cd site
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
