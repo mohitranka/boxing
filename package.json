@@ -20,5 +20,6 @@
     "@playwright/test": "^1.65.0",
     "esbuild": "^0.28.2"
   },
+  "license": "MIT",
   "private": true
 }

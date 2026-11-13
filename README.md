@@ -19,7 +19,7 @@ npm run build          # writes dist/: minified app.js, worker, index.html, styl
 ```
 
 `dist/` is the deployable artifact; it is what `www.mohitranka.com/projects/boxing/` serves.
-The source stays in this private repo.
+The source is open under the MIT License (see `LICENSE`).
 
 ## Test
 
